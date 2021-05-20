@@ -28,14 +28,13 @@ function displayResults(weather) {
     date.innerText = dateBuilder(now);
 
     let temp = document.querySelector('.current .temp')
-    temp.innerHTML = `${Math.round(weather.main.temp)}<span><sup>o</sup>c</span>`;
+    temp.innerHTML = `${Math.round(weather.main.temp)}<span>&deg;c</span>`;
 
     let weather_el = document.querySelector('.current .weather')
     weather_el.innerText = weather.weather[0].main;
 
     let hiLow = document.querySelector('.hi-low')
-    hiLow.innerText =  `${Math.round(weather.main.temp_min)}oC / 
-    ${Math.round(weather.main.temp_max)}oC`;
+    hiLow.innerText =  `${Math.round(weather.main.temp_min)}oC  / ${Math.round(weather.main.temp_max)}oC`;
 }
 
 function dateBuilder(d) {
