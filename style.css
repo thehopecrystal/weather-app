@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+    background-image: linear-gradient(to bottom, #000000b3, #00000099);
 }
 
 header {
@@ -33,7 +33,7 @@ header input {
     outline: none;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 16px 0 16px 0;
-    border-bottom: 3px solid #df8e00;
+    border-bottom: 3px solid #072E41;
     color: #313131;
     font-size: 20px;
     font-weight: 300;
@@ -51,6 +51,7 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    transition: all 300ms linear ease-in-out;
 }
 
 .location .city {
