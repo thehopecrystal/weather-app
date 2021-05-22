@@ -37,11 +37,11 @@ function displayResults(weather) {
     weather_el.innerText = weather.weather[0].main;
 
     let hiLow = document.querySelector('.hi-low')
-    hiLow.innerHTML = `Temp Min: ${Math.round(weather.main.temp_min)} <br>
-                        Temp Max: ${Math.round(weather.main.temp_max)} <br>
-                        Humidity: ${Math.round(weather.main.humidity)} <br>
-                        Pressure: ${Math.round(weather.main.pressure)} <br>
-                        Feels Like: ${Math.round(weather.main.feels_like)}`;
+    hiLow.innerHTML = `Temp Min: ${Math.round(weather.main.temp_min)}<span>&deg;c</span> <br>
+                        Temp Max: ${Math.round(weather.main.temp_max)}<span>&deg;c</span> <br>
+                        Humidity: ${Math.round(weather.main.humidity)}<span>&deg;c</span> <br>
+                        Pressure: ${Math.round(weather.main.pressure)}<span>&deg;c</span> <br>
+                        Feels Like: ${Math.round(weather.main.feels_like)}<span>&deg;c</span>`;
 
     function weatherImg() {
         if (weather_el.innerText == "Rain") {
