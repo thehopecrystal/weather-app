@@ -1,3 +1,6 @@
+console.log("Welcome to my weather app v1.2")
+
+
 const api = {
     key: "8897bbf6d8947fae44c273dbe0e41ed7",
     base: "https://api.openweathermap.org/data/2.5/"
